@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: 'Raleway';
+    }
+
+    header {
+        @apply md:w-[95%] w-full max-w-[1200px] h-[100px] flex flex-row justify-center items-center;
+    }
+    
+    body {
+        @apply bg-white w-full h-full;
+    }
+
+    section {
+        @apply my-4;
+    }
+
+    h1 {
+        @apply md:text-5xl text-2xl text-primary font-extrabold p-2 m-2;
+    }
+
+    h2 {
+        @apply text-3xl text-primary font-bold p-2 m-2;
+    }
+
+    h3 {
+        @apply md:text-xl text-lg text-black font-semibold;
+    }
+    ul {
+        @apply flex flex-row justify-evenly items-center w-full;
+    }
+    li {
+        @apply text-xl m-2 w-full font-semibold text-primary hover:font-extrabold hover:text-secondary cursor-pointer;
+    }
+
+    p {
+        @apply mx-2 text-base text-primary;
+    }
+
+    button {
+        @apply p-2 mx-2 text-white cursor-pointer rounded-3xl text-xl font-semibold bg-gradient-to-r from-primary to-tertiary hover:underline uppercase w-[150px];
+    }
+
+    a {
+        @apply cursor-pointer;
+    }
+
+    label {
+        @apply text-xl sm:whitespace-nowrap w-fit sm:w-max;
+    }
+
+    input {
+        @apply cursor-pointer text-primary text-xl font-semibold w-fit sm:w-full;
+    }
+
+    .hero-container {
+        @apply w-full min-h-[300px] h-fit text-primary flex flex-col justify-center items-center;
+    }
+
+    .hero {
+        @apply w-full h-full flex flex-row items-center justify-center text-center md:mx-24;
+    }
+
+    .features {
+        @apply w-full min-h-[300px] h-fit text-primary flex text-center flex-col justify-evenly items-stretch;
+    }
+
+    .benefits {
+         @apply w-full min-h-[300px] h-fit text-white flex text-center flex-col justify-evenly items-stretch z-10;
+    }
+
+    .CTA {
+        @apply w-full min-h-[300px] h-fit text-primary flex flex-col justify-center items-center;
+    }
+
+    .articles {
+        @apply w-full min-h-[300px] h-fit text-white text-left flex flex-col justify-center items-center;
+    }
+}
